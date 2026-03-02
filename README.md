@@ -12,10 +12,6 @@ O front-end é desenvolvido em **Angular** e o back-end em **.NET**, se comunica
 
 ## 🚀 Como Executar
 
-
-
-
-
 ### 1. Back-End (.NET)
 
 1. Abra o projeto no Visual Studio ou VS Code.
@@ -52,10 +48,25 @@ http://localhost:4200
 
 ---
 
-## 💡 Observações
+## 💡 Observações e Pontos de melhorias futuras
+
+ 1. Observações
 
 * Certifique-se de que o backend esteja em execução antes de iniciar o front-end.
 * O front-end consome o backend via HTTP.
 * Todo o tráfego de dados utiliza JSON.
+
+ 2. Proximos passos com mais tempo de trabalho
+
+- Tratamento de erros consistente: Retornar erros padronizados via middleware ou filtro de exceção.
+
+- Tratamento nas mensagens de erro e de sucesso no front-end para melhorar a experiencia do usuario
+
+- Atualmente estou utilizando o InMemory do Entity Framework; consideraria usar SQL Server ou PostgreSQL.
+
+- Adicionar login e roles (ex.: admin, usuário) para controlar quem pode criar ou excluir produtos.
+
+- Evitaria o possivel retorno de centenas de produtos de uma vez; aplicando paginacao.
+
 
 ---
